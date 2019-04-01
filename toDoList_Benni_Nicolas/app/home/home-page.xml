@@ -1,0 +1,14 @@
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
+
+    <ActionBar title="Post-it App" class="action-bar">
+        <Image src="http://milmeca.fr/dolibarr/dolibarr/scrumboard/img/Post-it.png"
+            class="action-image"></Image>
+    </ActionBar>
+    <ScrollView>
+        <StackLayout class="home-panel">
+            <ListPicker items="{{ listeTaches[0] }}" />
+            <Button text="Détails" class='btn btn-details' tap="{{ onButtonTap }}" />
+            <Button text="+" class='btn btn-add' tap="{{ onButtonTap }}" />
+        </StackLayout>
+    </ScrollView>
+</Page>
